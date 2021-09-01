@@ -144,5 +144,15 @@ if año > 1:
     total = bono1 + bono2
     print('Su bono es  de: ',total)
 
+# =============================================================================
+# Una Universidad le paga a sus profesores $20.000 la hora y le hace
+# un descuento del 5% por concepto de caja de ahorro. Determine el
+# monto del descuento y el monto total a pagar al profesor.
+# =============================================================================
+hora = int(input('Ingrese horas trabajadas: '))
+hora_paga = hora * 20000
+descuento = hora_paga * 0.05
+total_pagado = hora_paga - descuento
 
-    
+print('Descuento: ',descuento)
+print('Total a pagar: ',total_pagado)
