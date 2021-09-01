@@ -64,4 +64,32 @@ p = (200 - edad) / 10
 
 print('Su numero de pulsaciones es: ',p)
 
+# =============================================================================
+# Tres personas deciden invertir su dinero para fundar una empresa.
+# Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje
+# que cada quien invierte con respecto a la cantidad total invertida.
+# =============================================================================
+inver1 = int(input('Ingresa primera inversion: '))
+inver2 = int(input('Ingresa segunda inversion: '))
+inver3 = int(input('Ingresa tercera inversion: '))
+suma = inver1 + inver2 + inver3
+porcentaje1 = float((inver1 / suma)) * 100
+porcentaje2 = float((inver2 / suma)) * 100
+porcentaje3 = float((inver3 / suma)) * 100
+
+print('Total Invertido: ',suma)
+print('Porcentaje invertido 1: ',porcentaje1)
+print('Porcentaje invertido 2: ',porcentaje2)
+print('Porcentaje invertido 3: ',porcentaje3)
+
+# =============================================================================
+# 4. Un banco da a sus ahorradores un interes de 1.5% sobre el monto
+# ahorrado. Teniendo como dato de entrada el saldo inicial del
+# ahorrador determine el saldo final.
+# =============================================================================
+saldoI = int(print('Ingresa saldo inicial: '))
+saldoF = float(saldoI * 1.5) 
+print('Saldo final es de: ',saldoF)
+
+
 
