@@ -261,3 +261,5 @@ cuota_ordinaria = int(monto_total / 20)
 print('Monto total a pagar + intereses: ',monto_total)
 print('Couta especial: ',cuota_especial)
 print('Couta ordinaria: ',cuota_ordinaria)
+
+# fin de este bloque
