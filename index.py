@@ -98,10 +98,10 @@ print('Saldo final es de: ',saldoF)
 # a pagar al trabajador
 # =============================================================================
 sueldoB = int(input('Ingrese sueldo base: '))
-ley = sueldoB * 0.01
-seguro = sueldoB * 0.04
-seguroF = sueldoB * 0.005
-cajaH = sueldoB * 0.05
+ley = int(sueldoB * 0.01)
+seguro = int(sueldoB * 0.04)
+seguroF = int(sueldoB * 0.005)
+cajaH = int(sueldoB * 0.05)
 suma = ley + seguro + seguroF + cajaH 
 total = sueldoB - suma
 print('ley de politica pública: ',ley)
@@ -150,9 +150,9 @@ if año > 1:
 # monto del descuento y el monto total a pagar al profesor.
 # =============================================================================
 hora = int(input('Ingrese horas trabajadas: '))
-hora_paga = hora * 20000
-descuento = hora_paga * 0.05
-total_pagado = hora_paga - descuento
+hora_paga = int(hora * 20000)
+descuento = int(hora_paga * 0.05)
+total_pagado = int(hora_paga - descuento)
 
 print('Descuento: ',descuento)
 print('Total a pagar: ',total_pagado)
@@ -176,9 +176,9 @@ print('Costo de la llamada: ',recargo)
 # (16%).
 # =============================================================================
 cantidad_foto = int(input('Ingrese cantidad de fotos a revelar: '))
-valor = cantidad_foto * 1500
-iva = valor * 0.16
-total_pagar = valor + iva
+valor = int(cantidad_foto * 1500)
+iva = int(valor * 0.16)
+total_pagar = int(valor + iva)
 print('Iva: ',iva)
 print('valor a pagar: ',total_pagar)
 
@@ -194,9 +194,9 @@ print('valor a pagar: ',total_pagar)
 # monto presupuestal.
 # =============================================================================
 monto = int(input('Ingrese Monto presupuestal: '))
-ginecologia = monto * 0.4
-traumatologia = monto * 0.3
-pediatria = monto * 0.3
+ginecologia = int(monto * 0.4)
+traumatologia = int(monto * 0.3)
+pediatria = int(monto * 0.3)
 print('Monto presupuestal para ginecologa: ',ginecologia)
 print('Monto presupuestal para traumatologia: ',traumatologia)
 print('Monto presupuestal para pediatria: ',pediatria)
@@ -243,3 +243,21 @@ if cantidad_dia == 1:
 if cantidad_dia > 1:
     total = cantidad_dia * 200000 - 100000
     print('Cantidad a pagar es: ',total)
+    
+# =============================================================================
+# El banco del Pueblo da microcréditos a empresarios para ser
+# cancelados en un lapso de 2 años (24 meses). Al monto del
+# préstamo se le cobra un interés del 24%. El empresario debe pagar
+# la mitad del préstamo en 4 cuotas especiales y la otra mitad en 20
+# cuotas ordinarias. Realice un algoritmo que teniendo como dato de
+# entrada el monto del préstamo, determine el monto total a pagar por
+# el préstamo, el monto de las cuotas especiales y el monto de las
+# cuotas ordinarias.
+# =============================================================================
+monto_prestamo = int(input('Ingrese monto del prestamo: ')) 
+monto_total = (monto_prestamo * 0.24) + monto_prestamo 
+cuota_especial = int(monto_total / 4)
+cuota_ordinaria = int(monto_total / 20)
+print('Monto total a pagar + intereses: ',monto_total)
+print('Couta especial: ',cuota_especial)
+print('Couta ordinaria: ',cuota_ordinaria)
