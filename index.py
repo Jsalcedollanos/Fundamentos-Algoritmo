@@ -156,3 +156,15 @@ total_pagado = hora_paga - descuento
 
 print('Descuento: ',descuento)
 print('Total a pagar: ',total_pagado)
+
+# =============================================================================
+# Un centro de comunicaciones alquilan tarjetas para realizar llamadas
+# y cobran el monto consumido de la tarjeta mas un recargo del 20%.
+# Teniendo como dato de entrada el monto inicial y el monto final de la
+# tarjeta, determine el costo de la llamada.
+# =============================================================================
+monto_inicial = int(input('Ingrese monto Inicial: '))
+monto_final = int(input('Ingrese monto Final: '))
+monto_consumido = int(monto_inicial - monto_final) 
+recargo = monto_consumido * 0.2
+print('Costo de la llamada: ',recargo)
