@@ -126,3 +126,23 @@ t2 = int(tamaño * 25000)
 t3 = int(color * 15000)
 total = t1 + t2 + t3
 print('Total a pagar por su anuncio: ',total)
+
+# =============================================================================
+# Una empresa paga a sus empleados un bono por antigüedad que
+# consiste en $100.000 por el primer año laboral y $120.000 por cada
+# año siguiente. Realice un algoritmo que determine el monto del bono
+# a pagar a un trabajador que tiene varios años en la empresa
+# =============================================================================
+año = int(input('Ingrese los años trabajados: '))
+if año == 1:
+    bono = 100000
+    print('Su bono es  de: ',bono)
+    
+if año > 1:
+    bono1 = 100000
+    bono2 = (año - 1) * 120000
+    total = bono1 + bono2
+    print('Su bono es  de: ',total)
+
+
+    
