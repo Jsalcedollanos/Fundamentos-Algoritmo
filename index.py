@@ -168,3 +168,16 @@ monto_final = int(input('Ingrese monto Final: '))
 monto_consumido = int(monto_inicial - monto_final) 
 recargo = monto_consumido * 0.2
 print('Costo de la llamada: ',recargo)
+
+# =============================================================================
+# En una fototienda cobran por el revelado de un rollo $1.500 por cada
+# foto. Realice un algoritmo que determine el monto a pagar por un
+# revelado completo sabiendo que adiconalmente le cobran el IVA
+# (16%).
+# =============================================================================
+cantidad_foto = int(input('Ingrese cantidad de fotos a revelar: '))
+valor = cantidad_foto * 1500
+iva = valor * 0.16
+total_pagar = valor + iva
+print('Iva: ',iva)
+print('valor a pagar: ',total_pagar)
