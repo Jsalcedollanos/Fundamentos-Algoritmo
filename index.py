@@ -91,5 +91,22 @@ saldoI = int(input('Ingresa saldo inicial: '))
 saldoF = int(saldoI * 1.5) 
 print('Saldo final es de: ',saldoF)
 
-
+# =============================================================================
+# Una empresa le hace los siguientes descuentos sobre el sueldo base
+# a sus trabajadores: 1% por ley de politica pública, 4% por seguro
+# social, 0.5% por seguro forzoso y 5% por caja de ahorro. Realice un algoritmo que determine el monto de cada descuento y el monto total
+# a pagar al trabajador
+# =============================================================================
+sueldoB = int(input('Ingrese sueldo base: '))
+ley = sueldoB * 0.01
+seguro = sueldoB * 0.04
+seguroF = sueldoB * 0.005
+cajaH = sueldoB * 0.05
+suma = ley + seguro + seguroF + cajaH 
+total = sueldoB - suma
+print('ley de politica pública: ',ley)
+print('Seguro Social: ',seguro)
+print('Seguro Forzoso: ',seguroF)
+print('Caja de ahorro: ',cajaH)
+print('Sueldo total: ',total)
 
