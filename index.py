@@ -31,11 +31,20 @@ print('Resultado del punto 2:',res)
 # CALCULAMOS EL VALOR DE Y
 z = 5
 n = float((8 + 2 - 4 ) ** 2 * 5 + 8 +7/2 - 30 * 5) / 2 * 5 - 3 
-m = float(z ** 2 * 3 + n) print('asd')
+m = float(z ** 2 * 3 + n) 
 y = float((((z + 2 - n ) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 * 3 - 9/3) ** 2 - 5/4
 print('Resultado del punto 3 es: ',y)
 # FIN DEL TERCER PUNTO
 
+# Haga un algoritmo que calcule la masa de la siguiente fórmula:
+# Masa = (presión * volúmen) / (0.37 * (temperatura + 460))
+# Primer Punto
+p = float(input('Ingresa la presion: '))
+v = float(input('Ingresa el volumen: '))
+t = float(input('Ingresa la temperatura: '))
+m = float((p * v) / (0.37 * (t + 460)))
+
+print('El resultado de la masa es de: ',m)
 
 
 
