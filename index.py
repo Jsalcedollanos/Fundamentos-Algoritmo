@@ -14,6 +14,18 @@ print('Por ultimo realice la operacion de: / 2 * 5 - 3')
 print('resultado es: ',y)
 # FIN DEL PRIMER PUNTO
 
+# PUNTO 2
+# CALCULAMOS EL VALOR DE Y
+z = 5
+n = 3
+m = int(z)-int(n)
+
+y = float((((int(z) + 2 - int(n))^2*int(m))+8/2-30) / 2 * 5  - 3)
+exp = float(pow(y, 5))
+res = float(float(exp)+15*3-9)/3
+
+print('Resultado:',res)
+
 
 
 
