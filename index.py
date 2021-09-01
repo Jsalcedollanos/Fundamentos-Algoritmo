@@ -213,3 +213,17 @@ cantidad_dia = int(input('Ingresa cantidad de dias: '))
 valor_dia = cantidad_dia * 1500
 total_pagar = cantidad_pelicula * valor_dia
 print('Cantidad a pagar: ',total_pagar)
+
+# =============================================================================
+# Una Agencia de viajes cobra por un Tour a Cartagena $25.000
+# diarios por persona. Realice un algoritmo que determine el monto a
+# pagar por una familia que desee realizar dicho Tour sabiendo que
+# también cobran el 12% de IVA.
+# =============================================================================
+dia = int(input('Ingrese cantidad de dias: '))
+cantidad_persona = int(input('Ingrese cantidad de miembros de familia: '))
+pago_diario = cantidad_persona * 25000
+pago = pago_diario * dia
+iva = pago * 0.12
+total = pago + iva
+print('Total a pagar mas iva es: ',total)
