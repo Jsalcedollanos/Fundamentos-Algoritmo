@@ -227,3 +227,19 @@ pago = pago_diario * dia
 iva = pago * 0.12
 total = pago + iva
 print('Total a pagar mas iva es: ',total)
+
+# =============================================================================
+# Un Hotel 5 Estrellas de Santa Marta tiene una promoción para sus
+# clientes. Cobra por una habitación $100.000 el primer día y por el
+# resto $200.000 por día. Realice un algoritmo que determine el valor
+# total a pagar por la habitación si la estadía fue de varios días.
+# =============================================================================
+cantidad_dia = int(input('Ingrese cantidad de dias: '))
+if cantidad_dia < 1:
+    print('Monto digitado inferior a 1!')
+if cantidad_dia == 1:
+    total = cantidad_dia * 100000
+    print('Cantidad a pagar es: ',total)
+if cantidad_dia > 1:
+    total = cantidad_dia * 200000 - 100000
+    print('Cantidad a pagar es: ',total)
