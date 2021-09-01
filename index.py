@@ -181,3 +181,22 @@ iva = valor * 0.16
 total_pagar = valor + iva
 print('Iva: ',iva)
 print('valor a pagar: ',total_pagar)
+
+# =============================================================================
+# 11. En un hospital existen tres áreas: Ginecología, Pediatría y
+# Traumatología. El presupuesto anual del hospital se reparte
+# conforme a la siguiente tabla:
+# Area Porcentaje Presupuestal
+# Ginecología 40%
+# Traumatología 30%
+# Pediatría 30%
+# Obtener la cantidad de dinero que recibirá cada área, para cualquier
+# monto presupuestal.
+# =============================================================================
+monto = int(input('Ingrese Monto presupuestal: '))
+ginecologia = monto * 0.4
+traumatologia = monto * 0.3
+pediatria = monto * 0.3
+print('Monto presupuestal para ginecologa: ',ginecologia)
+print('Monto presupuestal para traumatologia: ',traumatologia)
+print('Monto presupuestal para pediatria: ',pediatria)
