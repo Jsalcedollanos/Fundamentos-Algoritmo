@@ -78,17 +78,17 @@ porcentaje2 = float((inver2 / suma)) * 100
 porcentaje3 = float((inver3 / suma)) * 100
 
 print('Total Invertido: ',suma)
-print('Porcentaje invertido 1: ',porcentaje1)
-print('Porcentaje invertido 2: ',porcentaje2)
-print('Porcentaje invertido 3: ',porcentaje3)
+print('Porcentaje invertido persona1: ',porcentaje1)
+print('Porcentaje invertido persona2: ',porcentaje2)
+print('Porcentaje invertido persona3: ',porcentaje3)
 
 # =============================================================================
 # 4. Un banco da a sus ahorradores un interes de 1.5% sobre el monto
 # ahorrado. Teniendo como dato de entrada el saldo inicial del
 # ahorrador determine el saldo final.
 # =============================================================================
-saldoI = int(print('Ingresa saldo inicial: '))
-saldoF = float(saldoI * 1.5) 
+saldoI = int(input('Ingresa saldo inicial: '))
+saldoF = int(saldoI * 1.5) 
 print('Saldo final es de: ',saldoF)
 
 
